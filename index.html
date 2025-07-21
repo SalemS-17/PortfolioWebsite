@@ -6,16 +6,53 @@
     <title>Salem Sinawi's Website/Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=VT323&display=swap');
+    </style>
 </head>
-<body>
+<body >
     <nav id="desktop-nav">
-        <div class="logo"> Salem Sinawi</div>
+        <div class="logo"> SALEM SINAWI</div>
         <div>
             <ul class="nav-links">
-
+                    <li><a href="#about">ABOUT</a> </li>
+                    <li><a href="#expierence">EXPIERENCE</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> SALEM SINAWI</div>
+        <div class="hamburger-menu"> 
+            <div class="hamburger-icon" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">ABOUT</a> </li>
+                <li><a href="#expierence" onclick="toggleMenu()">EXPIERENCE</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">SALEM SINAWI</h1>
+            <p class="section__text__p2">Computer Science Student/Devloper</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/Salem_Resume.docx')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href=('./#contact')">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assets/LinkedIn_2021.svg" alt="My LinkedIn Profile Link" class="icon" onclick="window.open('https://www.linkedin.com/in/salem-sinawi-11b6742a7/')">
+                <img src="./Assets/github-white-icon.webp" alt="My Github" class="icon" onclick="window.open('https://github.com/SalemS-17')">
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
