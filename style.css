@@ -337,10 +337,10 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
-}
+} 
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .arrow {
@@ -365,8 +365,8 @@ section {
 }
 
 .section__pic-container {
-  height: 650px;
-  width: 650px;
+  height: 500px;
+  width: 500px;
   margin: auto 0;
 }
 
